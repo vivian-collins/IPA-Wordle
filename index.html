@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>IPA Daily</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module"></script>
+    <link
+      rel="icon"
+      type="IPA.png"
+      href="https://cdn.glitch.global/23d38d7b-9379-4fba-9a97-d0a96fb2697a/IPA.png?v=1677259210916"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h2>IPA <span id="daily">Wordle</span></h2>
+        <h5 id="daily-done"></h5>
+        IPA
+        <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle!</a
+        ><br />
+      </header>
+      <div class="board"></div>
+      <div class="feedback"></div>
+      <div class="keyboard"></div>
+      <footer>
+      </footer>
+    </div>
+    <script>
+      window.onbeforeunload = function (e) {
+        if (window.wip) return "Leave page? You'll lose your progress :()";
+      };
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JF19L510GP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JF19L510GP");
+    </script>
+  </body>
+</html>
